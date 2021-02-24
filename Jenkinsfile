@@ -28,7 +28,10 @@ pipeline {
 
     stage('SonarQube Analysis') {
       steps {
-        sh "/home/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonarqubescanner/bin/sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.projectName=meanstackapp -Dsonar.projectVersion=1.0 -Dsonar.projectKey=meanstack:app -Dsonar.sources=. -Dsonar.projectBaseDir=/Users/danielsilva/.jenkins/workspace/sonarqube_pipeline"
+        sh "/Users/danielsilva/.jenkins/tools/sonar-scanner-4.6.0.2311-macosx/bin/sonar-scanner \
+            -Dsonar.host.url=http://localhost:9000 \
+            -Dsonar.projectName=meanstackapp -Dsonar.projectVersion=1.0 -Dsonar.projectKey=meanstack:app -Dsonar.sources=. \
+            -Dsonar.projectBaseDir=/Users/danielsilva/.jenkins/workspace/sonarqube_pipeline"
       }
     }
     
