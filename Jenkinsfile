@@ -1,13 +1,27 @@
+
 pipeline {
   agent any
- 
+    
   tools {nodejs "node"}
- 
+    
   stages {
-    stage('Example') {
+        
+    stage('Cloning Git') {
       steps {
-        sh 'npm config ls'
+        git 'https://github.com/gustavoapolinario/node-todo-frontend'
       }
     }
+        
+    stage('Install dependencies') {
+      steps {
+        sh 'npm install'
+      }
+    }
+     
+    stage('Test') {
+      steps {
+         sh 'npm test'
+      }
+    }      
   }
 }
