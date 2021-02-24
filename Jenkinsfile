@@ -15,13 +15,13 @@ pipeline {
         
     stage('Install dependencies') {
       steps {
-        sh 'npm install'
+        sh 'cd src && npm install'
       }
     }
      
     stage('Test') {
       steps {
-         sh 'npm test'
+         sh 'cd src && npm test'
       }
     }      
   }
