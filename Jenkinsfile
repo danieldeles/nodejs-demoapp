@@ -25,11 +25,11 @@ pipeline {
       }
     } 
     
-    stage('Test2') {
-      steps {
-         sh 'cd src && mocha tests'
-      }
-    } 
+    //stage('Test2') {
+    //  steps {
+    //     sh 'cd src && mocha tests'
+    //  }
+    //} 
 
     //stage('SonarQube Analysis') {
     //  steps {
