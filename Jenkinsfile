@@ -12,6 +12,10 @@ pipeline {
     //    
     //  }
     //}
+
+    stage('Checkout'){
+      checkout scm
+    }
         
     stage('Install dependencies') {
       steps {
