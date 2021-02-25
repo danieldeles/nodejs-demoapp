@@ -25,6 +25,11 @@ pipeline {
       }
     } 
     
+    stage('Test2') {
+      steps {
+         sh 'mocha tests'
+      }
+    } 
 
     stage('SonarQube Analysis') {
       steps {
