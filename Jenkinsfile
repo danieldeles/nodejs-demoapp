@@ -30,13 +30,17 @@ pipeline {
       parallel { 
         stage('Test Shell1') {
           steps {
+            sh 'date && echo TestShell1'
             sh 'echo Test Shell1_1 && sleep 25 && echo Test Shell1_2'
+            sh 'date && echo TestShell1'
           }
         } 
 
             stage('Test Shell2') {
           steps {
+            sh 'date && echo TestShell1'
             sh 'echo Test Shell2_1 && sleep 15 && echo Test Shell2_2'
+            sh 'date && echo TestShell1'
           }
         }
       }
