@@ -20,14 +20,17 @@ pipeline {
     }
 
 
-    stage('Test') {
-      steps {
-         sh 'cd src && npm test'
-      }
-    } 
 
     stage('Run Tests') {
       parallel { 
+
+
+        stage('Test') {
+          steps {
+            sh 'cd src && npm test'
+          }
+        } 
+
         stage('Test Shell1') {
           steps {
             sh 'date && echo TestShell1'
