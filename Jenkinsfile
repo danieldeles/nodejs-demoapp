@@ -25,9 +25,15 @@ pipeline {
       }
     } 
 
-    stage('Test Shell') {
+    stage('Test Shell1') {
       steps {
-         sh 'echo OI1 && sleep 3 && echo OI2'
+         sh 'echo OI1 && sleep 5 && echo OI2'
+      }
+    } 
+
+        stage('Test Shell2') {
+      steps {
+         sh 'echo OI1 && sleep 15 && echo OI2'
       }
     } 
     
