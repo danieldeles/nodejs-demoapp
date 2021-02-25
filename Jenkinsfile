@@ -6,12 +6,12 @@ pipeline {
     
   stages {
         
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/danieldeles/nodejs-demoapp.git'
-        
-      }
-    }
+    //stage('Cloning Git') {
+    //  steps {
+    //    git 'https://github.com/danieldeles/nodejs-demoapp.git'
+    //    
+    //  }
+    //}
         
     stage('Install dependencies') {
       steps {
