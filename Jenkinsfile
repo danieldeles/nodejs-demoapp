@@ -24,6 +24,12 @@ pipeline {
          sh 'cd src && npm test'
       }
     } 
+
+    stage('Test') {
+      steps {
+         sh 'echo OI1 && sleep && echo OI2'
+      }
+    } 
     
     //stage('Test2') {
     //  steps {
