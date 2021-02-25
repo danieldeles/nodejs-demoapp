@@ -18,22 +18,27 @@ pipeline {
         sh 'cd src && npm install'
       }
     }
-     
+
+
     stage('Test') {
       steps {
          sh 'cd src && npm test'
       }
     } 
 
-    stage('Test Shell1') {
-      steps {
-         sh 'echo OI1 && sleep 5 && echo OI2'
-      }
-    } 
+    stage('Run Tests') {
+      parallel { 
+        stage('Test Shell1') {
+          steps {
+            sh 'echo Test Shell1_1 && sleep 25 && echo Test Shell1_2'
+          }
+        } 
 
-        stage('Test Shell2') {
-      steps {
-         sh 'echo OI1 && sleep 15 && echo OI2'
+            stage('Test Shell2') {
+          steps {
+            sh 'echo Test Shell2_1 && sleep 15 && echo Test Shell2_2'
+          }
+        }
       }
     } 
     
