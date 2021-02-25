@@ -27,7 +27,7 @@ pipeline {
     
     stage('Test2') {
       steps {
-         sh 'mocha tests'
+         sh 'cd src && mocha tests'
       }
     } 
 
