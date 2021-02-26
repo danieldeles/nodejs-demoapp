@@ -73,33 +73,7 @@ pipeline {
         } 
     
 
-    stage('Building image1') {
-      steps{
-        script {
-          dockerImage = docker.build imagename
-        }
-      }
-    }
-
-    stage('Building image') {
-      steps{
-        script {
-          docker.build registry + ":$BUILD_NUMBER"
-        }
-      }
-    }
-
-    stage('Deploy Image') {
-      steps{
-        script {
-          docker.withRegistry( '', registryCredential ) {
-            dockerImage.push("$BUILD_NUMBER")
-             dockerImage.push('latest')
-
-          }
-        }
-      }
-    }
+    
 
     
   }
