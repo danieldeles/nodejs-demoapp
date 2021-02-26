@@ -59,18 +59,18 @@ pipeline {
         } 
 
 
+        stage('Tests Postman-newman') {
+          steps {
+            //sh 'cd src && test-postman'
+            sh 'cd src && /usr/local/bin/newman run ./tests/postman_collection.json --suppress-exit-code 1'
+          }
+        } 
 
 
 
       }
     } 
 
-            stage('Tests Postman-newman') {
-          steps {
-            //sh 'cd src && test-postman'
-            sh 'cd src && /usr/local/bin/newman run ./tests/postman_collection.json '
-          }
-        } 
     
 
     
