@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     imagename = "danieldeles/node01"
-    registryCredential = 'yenigul-dockerhub'
+    registryCredential = 'userpassdockerhub'
     dockerImage = ''
     varTest = 'xixixixixixi'
   }
@@ -71,16 +71,16 @@ pipeline {
 
         ///usr/local/bin/docker
 
-        stage('Building image 0') {
-          steps {
-              sh 'docker build --label v1.0.0 -t myrepo/myapp:v1.0.0'
-          }
-        }
+        //stage('Building image 0') {
+        //  steps {
+        //      sh 'docker build --label v1.0.0 -t myrepo/myapp:v1.0.0'
+        //  }
+        //}
 
         stage('Building image') {
           steps{
             script {
-              dockerImage = docker.build //imagename
+              dockerImage = docker.build imagename
             }
           }
         }
