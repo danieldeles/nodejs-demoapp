@@ -39,6 +39,14 @@ pipeline {
     }
 
 
+    stage('Building image') {
+      steps{
+        script {
+          dockerImage = docker.build imagename
+        }
+      }
+    }
+
 
     stage('Run Tests') {
       parallel { 
@@ -76,15 +84,6 @@ pipeline {
         //      sh 'docker build --label v1.0.0 -t myrepo/myapp:v1.0.0'
         //  }
         //}
-
-        stage('Building image') {
-          steps{
-            script {
-              dockerImage = docker.build imagename
-            }
-          }
-        }
-
 
 
       }
