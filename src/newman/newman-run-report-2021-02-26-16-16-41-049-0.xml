@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Node.js Demoapp" tests="4" time="0.000">
+  <testsuite name="Check Home Page" id="fb5bb3a2-a8e5-49ee-8567-2185eceefe6d" timestamp="2021-02-26T16:16:40.904Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND {{apphost}}
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+---
+]]></system-err>
+    <testcase name="Home Page: Successful GET request" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'UNDEFINED'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Home Page.]]>
+        <![CDATA[Test description: Home Page: Successful GET request.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'UNDEFINED'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'UNDEFINED'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Home Page: Response valid &amp; HTML body" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have content in body">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Home Page.]]>
+        <![CDATA[Test description: Home Page: Response valid & HTML body.]]>
+        <![CDATA[Error message: expected response to have content in body.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have content in body
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Home Page: Check content" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Home Page.]]>
+        <![CDATA[Test description: Home Page: Check content.]]>
+        <![CDATA[Error message: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given.]]>
+        <![CDATA[Stacktrace: AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+   at Object.eval sandbox-script.js:3:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Check Info Page" id="d3e42a39-c529-4455-95bb-42f4e8b69476" timestamp="2021-02-26T16:16:40.904Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND {{apphost}}
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+---
+]]></system-err>
+    <testcase name="Info Page: Successful GET request" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'UNDEFINED'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Info Page.]]>
+        <![CDATA[Test description: Info Page: Successful GET request.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'UNDEFINED'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'UNDEFINED'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Info Page: Response valid &amp; HTML body" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have content in body">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Info Page.]]>
+        <![CDATA[Test description: Info Page: Response valid & HTML body.]]>
+        <![CDATA[Error message: expected response to have content in body.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have content in body
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Info Page: Check content" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Info Page.]]>
+        <![CDATA[Test description: Info Page: Check content.]]>
+        <![CDATA[Error message: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given.]]>
+        <![CDATA[Stacktrace: AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+   at Object.eval sandbox-script.js:3:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Check Weather API" id="45a6a904-08bf-4d6c-8a4c-3e403f537f89" timestamp="2021-02-26T16:16:40.904Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND {{apphost}}
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+---
+]]></system-err>
+    <testcase name="Weather API: Successful GET request" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'UNDEFINED'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Weather API.]]>
+        <![CDATA[Test description: Weather API: Successful GET request.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'UNDEFINED'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'UNDEFINED'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="Weather API: Response valid &amp; JSON body" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have content in body">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Weather API.]]>
+        <![CDATA[Test description: Weather API: Response valid & JSON body.]]>
+        <![CDATA[Error message: expected response to have content in body.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have content in body
+   at Object.eval sandbox-script.js:2:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="Weather API: Check API response" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="Unexpected token u in JSON at position 0">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Weather API.]]>
+        <![CDATA[Test description: Weather API: Check API response.]]>
+        <![CDATA[Error message: Unexpected token u in JSON at position 0.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token u in JSON at position 0
+   at Object.eval sandbox-script.js:3:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Check Error Page" id="d0f41c3d-dcce-4c59-acf6-86ca8d0960d2" timestamp="2021-02-26T16:16:40.904Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND {{apphost}}
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+---
+]]></system-err>
+    <testcase name="Error Page: Returns 500" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected { Object (id, _details, ...) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Error Page.]]>
+        <![CDATA[Test description: Error Page: Returns 500.]]>
+        <![CDATA[Error message: expected { Object (id, _details, ...) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, _details, ...) } to have property 'code'
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Error Page: Response valid &amp; HTML body" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="expected response to have content in body">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Error Page.]]>
+        <![CDATA[Test description: Error Page: Response valid & HTML body.]]>
+        <![CDATA[Error message: expected response to have content in body.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have content in body
+   at Object.eval sandbox-script.js:2:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Error Page: Check exception" time="0.000" classname="NodeJsDemoapp">
+      <failure type="AssertionFailure" message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 8c90c22b-3e1f-45c9-aaf5-058b37f34474.]]>
+        <![CDATA[Collection name: Node.js Demoapp.]]>
+        <![CDATA[Request name: Check Error Page.]]>
+        <![CDATA[Test description: Error Page: Check exception.]]>
+        <![CDATA[Error message: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given.]]>
+        <![CDATA[Stacktrace: AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+   at Object.eval sandbox-script.js:3:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

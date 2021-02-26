@@ -5,6 +5,7 @@ pipeline {
     imagename = "yenigul/hacicenkins"
     registryCredential = 'yenigul-dockerhub'
     dockerImage = ''
+    varTest = 'xixixixixixi'
   }
 
   agent any
@@ -49,17 +50,19 @@ pipeline {
         // }
         //}
 
-        stage('Test Shell1') {
+
+        stage('Tests Mocha') {
           steps {
-            sh 'date && echo TestShell1'
-            sh 'echo Test Shell1_1 && sleep 25 && echo Test Shell1_2'
-            sh 'date && echo TestShell1'
+            sh 'cd src && npm test'
+            //npm run test-junit
           }
         } 
 
-        stage('Test') {
+
+        stage('Tests Postman-newman') {
           steps {
-            sh 'cd src && npm test'
+            sh 'cd src && test-postman'
+            //sh 'cd src && newman run ./tests/postman_collection.json --suppress-exit-code 1'
           }
         } 
 
@@ -72,6 +75,14 @@ pipeline {
       steps{
         script {
           dockerImage = docker.build imagename
+        }
+      }
+    }
+
+    stage('Building image') {
+      steps{
+        script {
+          docker.build registry + ":$BUILD_NUMBER"
         }
       }
     }
