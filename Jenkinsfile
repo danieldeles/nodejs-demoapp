@@ -2,7 +2,7 @@
 pipeline {
 
   environment {
-    imagename = "yenigul/hacicenkins"
+    imagename = "danieldeles/node01"
     registryCredential = 'yenigul-dockerhub'
     dockerImage = ''
     varTest = 'xixixixixixi'
@@ -23,20 +23,24 @@ pipeline {
 
     stage('Clone repository'){
       steps {
+
         checkout scm
+
       }
     }
         
 
     stage('Install dependencies') {
       steps {
+
         sh 'cd src && npm install'
+
       }
     }
 
 
 
-    stage('Tests Code') {
+    stage('Run Tests') {
       parallel { 
 
 
@@ -61,10 +65,19 @@ pipeline {
 
         stage('Tests Postman-newman') {
           steps {
-            //sh 'cd src && test-postman'
             sh 'cd src && /usr/local/bin/newman run ./tests/postman_collection.json --suppress-exit-code 1'
           }
         } 
+
+        ///usr/local/bin/docker
+
+        stage('Building image') {
+          steps{
+            script {
+              dockerImage = docker.build imagename
+            }
+          }
+        }
 
 
 
