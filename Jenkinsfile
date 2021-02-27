@@ -70,7 +70,7 @@ pipeline {
         //steps {
           withCredentials([usernamePassword(credentialsId: 'userpassdockerhub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
             sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-            sh 'docker push delesderrier/NodeJS-kk:latest'
+            sh 'docker push delesderrier/nodejs-kk:latest'
           }
 
           /* Finally, we'll push the image with two tags:
