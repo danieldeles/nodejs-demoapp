@@ -1,12 +1,10 @@
 
 pipeline {
 
-  environment {
-    imagename = "danieldeles/node01"
-    registryCredential = 'userpassdockerhub'
-    dockerImage = ''
-    varTest = 'xixixixixixi'
-  }
+  //environment {
+    //imagename = "danieldeles/node01"
+    //registryCredential = 'userpassdockerhub'
+  //}
 
 
   agent any
@@ -54,7 +52,6 @@ pipeline {
         stage('Tests Mocha') {
           steps {
             sh 'cd src && npm test'
-            //npm run test-junit
           }
         } 
 
