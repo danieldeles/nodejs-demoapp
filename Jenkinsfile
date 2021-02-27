@@ -116,6 +116,7 @@ pipeline {
       }
     } 
 
+/*
     stage('Building image2') {
       steps{
         script {
@@ -124,7 +125,7 @@ pipeline {
       }
     }
 
-
+*/
 
 
     
