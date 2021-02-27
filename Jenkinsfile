@@ -8,7 +8,6 @@ pipeline {
     varTest = 'xixixixixixi'
   }
 
-  //def app
 
   agent any
     
