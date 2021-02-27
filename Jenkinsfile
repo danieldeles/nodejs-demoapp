@@ -43,7 +43,7 @@ pipeline {
 
 
 
-/*
+
 
     stage('Run Tests') {
       parallel { 
@@ -51,7 +51,7 @@ pipeline {
 
         //stage('Code Quality Check via SonarQube') {
         //  steps {
-        //   sh "/Users/danielsilva/.jenkins/tools/sonar-scanner-4.6.0.2311-macosx/bin/sonar-scanner \
+        //   sh "/home/ddd/developer/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner \
           //      -Dsonar.projectKey=nodejs-demoapp \
           //      -Dsonar.sources=src \
           //      -Dsonar.host.url=http://10.0.0.49:9000 \
@@ -78,7 +78,7 @@ pipeline {
       }
     } 
 
-*/
+
 
 
     stage('Build image') {
