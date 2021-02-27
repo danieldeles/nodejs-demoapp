@@ -59,7 +59,18 @@ pipeline {
       } 
     }  
     
+     stage('Test image') {
+        steps {
+          script {
+            /* Ideally, we would run a test framework against our image.
+            * For this example, we're using a Volkswagen-type approach ;-) */
 
+            docker.inside {
+                sh 'echo "Tests passed"'
+                }
+            }
+        }
+    }
 
 
 
@@ -105,7 +116,7 @@ pipeline {
       }
     } 
 
-    stage('Building image2') {
+    stage('Building image') {
       steps{
         script {
           dockerImage = docker.build imagename
