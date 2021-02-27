@@ -39,13 +39,7 @@ pipeline {
     }
 
 
-    stage('Building image') {
-      steps{
-        script {
-          dockerImage = docker.build imagename
-        }
-      }
-    }
+
 
 
     stage('Run Tests') {
@@ -89,7 +83,13 @@ pipeline {
       }
     } 
 
-    
+    stage('Building image') {
+      steps{
+        script {
+          dockerImage = docker.build imagename
+        }
+      }
+    }
 
     
 
