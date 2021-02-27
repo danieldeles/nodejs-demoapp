@@ -40,6 +40,7 @@ pipeline {
       }
     }
 
+/*
     stage('Building image') {
       steps{
         script {
@@ -47,6 +48,7 @@ pipeline {
         }
       }
     }
+    */
 
     stage('Build image') {
       steps {
@@ -68,7 +70,7 @@ pipeline {
         //steps {
           withCredentials([usernamePassword(credentialsId: 'userpassdockerhub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
             sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-            sh 'docker push shanem/spring-petclinic:latest'
+            sh 'docker push delesderrier/NodeJS-kk:latest'
           }
 
           /* Finally, we'll push the image with two tags:
