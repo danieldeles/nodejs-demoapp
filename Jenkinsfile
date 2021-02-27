@@ -41,7 +41,7 @@ pipeline {
       parallel { 
 
 
-        stage('Code Quality Check via SonarQube') {
+        stage('Tests Quality Check SonarQube') {
           steps {
            sh "/home/ddd/developer/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner \
                 -Dsonar.projectKey=nodejs-demoapp \
@@ -60,7 +60,7 @@ pipeline {
         } 
 
 
-        stage('Tests Postman-newman') {
+        stage('Tests Postman-Newman') {
           steps {
             sh 'cd src && /usr/local/bin/newman run ./tests/postman_collection.json --suppress-exit-code 1'
           }
