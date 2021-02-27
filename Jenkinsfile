@@ -40,6 +40,7 @@ pipeline {
       }
     }
 
+/*
     stage('Building image') {
       steps{
         script {
@@ -47,6 +48,7 @@ pipeline {
         }
       }
     }
+    */
 
     stage('Build image') {
       steps {
@@ -54,25 +56,12 @@ pipeline {
           /* This builds the actual image; synonymous to
           * docker build on the command line */
 
-          docker = docker.build("getintodevops/hellonode")
+          docker = docker.build("NodeJS/KK_version")
         } 
       } 
     }  
     
-    /*
-     stage('Test image') {
-        steps {
-          script {
-            // Ideally, we would run a test framework against our image.
-            // For this example, we're using a Volkswagen-type approach ;-) 
 
-            docker.inside {
-                sh 'cd src && npm test'
-                }
-            }
-        }
-    }
-    */
 
     stage('Push image') {
       steps {
@@ -82,8 +71,8 @@ pipeline {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
           docker.withRegistry('https://registry.hub.docker.com', 'userpassdockerhub') {
-            app.push("${env.BUILD_NUMBER}")
-            app.push("latest")
+            docker.push("${env.BUILD_NUMBER}")
+            docker.push("latest")
         
           }
         }
