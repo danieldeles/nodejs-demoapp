@@ -42,10 +42,12 @@ pipeline {
 
 
     stage('Build image') {
+      steps {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
         docker = docker.build("getintodevops/hellonode")
+      } 
     }  
     
      stage('Test image') {
