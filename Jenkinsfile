@@ -54,7 +54,7 @@ pipeline {
            sh "/home/ddd/developer/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner \
                 -Dsonar.projectKey=nodejs-demoapp \
                 -Dsonar.sources=src \
-                -Dsonar.host.url=http://10.0.0.49:9000 \
+                -Dsonar.host.url=http://10.0.0.100:9000 \
                 -Dsonar.login=c86e2fa7-2e41-4f8c-a211-1980773bf8be"
           }
         }
