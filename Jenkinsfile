@@ -49,15 +49,15 @@ pipeline {
       parallel { 
 
 
-        //stage('Code Quality Check via SonarQube') {
-        //  steps {
-        //   sh "/home/ddd/developer/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner \
-          //      -Dsonar.projectKey=nodejs-demoapp \
-          //      -Dsonar.sources=src \
-          //      -Dsonar.host.url=http://10.0.0.49:9000 \
-          //     -Dsonar.login=8a4b975a864dbb3d6d3sa663a8d479b7f21b4cc6"
-        // }
-        //}
+        stage('Code Quality Check via SonarQube') {
+          steps {
+           sh "/home/ddd/developer/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner \
+                -Dsonar.projectKey=nodejs-demoapp \
+                -Dsonar.sources=src \
+                -Dsonar.host.url=http://10.0.0.49:9000 \
+               -Dsonar.login=8a4b975a864dbb3d6d3sa663a8d479b7f21b4cc6"
+          }
+        }
 
 
         stage('Tests Mocha') {
