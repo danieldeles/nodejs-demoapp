@@ -16,12 +16,6 @@ pipeline {
     
   stages {
         
-    //stage('Cloning Git') {
-    //  steps {
-    //    git 'https://github.com/danieldeles/nodejs-demoapp.git'
-    //    
-    //  }
-    //}
 
     stage('Clone repository'){
       steps {
@@ -43,9 +37,7 @@ pipeline {
 
 
 
-
-
-    stage('Run Tests') {
+    stage('Run Tests in Parallel') {
       parallel { 
 
 
@@ -58,8 +50,7 @@ pipeline {
                 -Dsonar.login=8a4b975a864dbb3d6d3ea663a8d479b7f21b4cc6"
           }
         }
-//8a4b975a864dbb3d6d3ea663a8d479b7f21b4cc6
-//c86e2fa7-2e41-4f8c-a211-1980773bf8be
+
 
         stage('Tests Mocha') {
           steps {
@@ -85,8 +76,6 @@ pipeline {
     stage('Build image') {
       steps {
         script {
-          /* This builds the actual image; synonymous to
-          * docker build on the command line */
 
           docker = docker.build("delesderrier/nodejs-kk")
           
