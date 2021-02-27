@@ -55,10 +55,11 @@ pipeline {
                 -Dsonar.projectKey=nodejs-demoapp \
                 -Dsonar.sources=src \
                 -Dsonar.host.url=http://10.0.0.100:9000 \
-                -Dsonar.login=c86e2fa7-2e41-4f8c-a211-1980773bf8be"
+                -Dsonar.login=8a4b975a864dbb3d6d3ea663a8d479b7f21b4cc6"
           }
         }
-
+//8a4b975a864dbb3d6d3ea663a8d479b7f21b4cc6
+//c86e2fa7-2e41-4f8c-a211-1980773bf8be
 
         stage('Tests Mocha') {
           steps {
