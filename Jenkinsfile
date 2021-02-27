@@ -59,20 +59,7 @@ pipeline {
       } 
     }  
     
-    /*
-     stage('Test image') {
-        steps {
-          script {
-            // Ideally, we would run a test framework against our image.
-            // For this example, we're using a Volkswagen-type approach ;-) 
 
-            docker.inside {
-                sh 'cd src && npm test'
-                }
-            }
-        }
-    }
-    */
 
     stage('Push image') {
       steps {
@@ -89,7 +76,7 @@ pipeline {
       }
     }
 
-
+/*
 
     stage('Run Tests') {
       parallel { 
@@ -120,17 +107,12 @@ pipeline {
           }
         } 
 
-        ///usr/local/bin/docker
-
-        //stage('Building image 0') {
-        //  steps {
-        //      sh 'docker build --label v1.0.0 -t myrepo/myapp:v1.0.0'
-        //  }
-        //}
-
 
       }
     } 
+
+*/
+
 
 /*
     stage('Building image2') {
