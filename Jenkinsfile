@@ -55,7 +55,6 @@ pipeline {
                 -Dsonar.projectKey=nodejs-demoapp \
                 -Dsonar.sources=src \
                 -Dsonar.host.url=http://10.0.0.49:9000 \
-
                 -Dsonar.login=c86e2fa7-2e41-4f8c-a211-1980773bf8be"
           }
         }
