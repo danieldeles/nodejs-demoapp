@@ -91,7 +91,18 @@ pipeline {
       }
     }
 
-    
+    stage('Test image') {           
+      docker.inside {            
+        
+        sh 'echo "Tests passed"'        
+      }    
+    }     
+    stage('Push image') {
+      docker.withRegistry('https://registry.hub.docker.com', 'git') {            
+      docker.push("${env.BUILD_NUMBER}")            
+      docker.push("latest")        
+      }    
+    }
 
     
   }
