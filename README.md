@@ -8,7 +8,7 @@ There are also two **videos** inside the **Docs** folder. They show the pipeline
 
 This document describes **how to develop a pipeline for the CI** (Continuous Integration) process using the GitHub project.
 
-This project code was forked: https://github.com/benc-uk/nodejs-demoapp
+This project was forked: https://github.com/benc-uk/nodejs-demoapp
 
 Pipeline prerequisites:
 
