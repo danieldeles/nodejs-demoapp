@@ -1,5 +1,5 @@
 # Pipeline KK
---
+
 The **Official Documentation** (in Portuguese) is in: https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
 
 There are also two **videos** inside the **Docs** folder. They show the pipeline working on Jenkins Labs.
@@ -12,11 +12,11 @@ This project was forked: https://github.com/benc-uk/nodejs-demoapp
 
 Pipeline prerequisites:
 
-- Have a code analysis step using SonarQube
-- Have a unit testing validation step
-- Have tests in parallel
-- Generate image in Docker
-- Push the versioned image to a public repository
+- Code analysis using SonarQube
+- Unit tests
+- Tests in parallel
+- Buid image in Docker
+- Push the image to a public repository
 - Do not use GitHub Actions
 
 
