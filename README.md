@@ -1,6 +1,9 @@
 # Pipeline KK
 
-Objetivo:
+O documentação oficial esta dentro da pasta Docs: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
+
+
+## Objetivo:
 
 Este documento descreve como desenvolver uma pipeline para o processo de CI (Continuous Integration) utilizando o projecto do GitHub.
 
