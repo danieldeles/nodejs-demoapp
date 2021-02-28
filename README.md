@@ -33,9 +33,9 @@ In addition, some characteristics deserve to be highlighted because they influen
 
 Based on the pre-defined conditions, a pipeline workflow was created:
 
-1 Project checkout on GitHub
-2 Install as NodeJS dependencies
-3 Run tests in parallel:
+.1 Project checkout on GitHub
+.2 Install as NodeJS dependencies
+.3 Run tests in parallel:
 3.1- Code analysis in SonarQube
 3.2- Mocha Tests
 3.3- Postman tests
