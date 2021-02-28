@@ -6,7 +6,7 @@ There are also two **videos** inside the **Docs** folder. They show the pipeline
 
 ## Objective:
 
-This document describes how to develop a pipeline for the CI (Continuous Integration) process using the GitHub project.
+This document describes **how to develop a pipeline for the CI** (Continuous Integration) process using the GitHub project.
 
 This project code using NodeJS was forked: https://github.com/benc-uk/nodejs-demoapp
 
@@ -42,7 +42,7 @@ Based on the pre-defined conditions, a pipeline workflow was created:
 - Generate image in Docker using Dockerfile
 - Push the versioned image to DockerHub
 
-
+----------
 
 This is a simple Node.js web app using the Express framework and EJS templates. 
 
