@@ -1,3 +1,7 @@
+/*
+The Official Documentation (Portuguese) is in: 
+https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
+*/
 
 pipeline {
 
