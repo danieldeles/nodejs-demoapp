@@ -8,7 +8,7 @@ There are also two **videos** of the pipeline working on Jenkins Labs.
 
 This document describes how to develop a pipeline for the CI (Continuous Integration) process using the GitHub project.
 
-This project was forked: https://github.com/benc-uk/nodejs-demoapp
+This project code using NodeJS was forked: https://github.com/benc-uk/nodejs-demoapp
 
 Pipeline prerequisites:
 
