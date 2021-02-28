@@ -1,6 +1,6 @@
 # Pipeline KK
 
-The **Official Documentation** (in Portuguese) is in: https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
+The **Official Documentation** (Portuguese) is in: https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
 
 There are also two **videos** inside the **Docs** folder. They show the pipeline working on Jenkins Labs.
 
@@ -17,16 +17,7 @@ Pipeline prerequisites:
 - Tests in parallel
 - Buid image in Docker
 - Push the image to a public repository
-- Do not use GitHub Actions
-
-
-In addition, some characteristics deserve to be highlighted because they influence decisions and tools:
-
-- Source code in Node.js - the Express framework with EJS templates was used.
-- It has some ready tests:
-  - Mocha tests at: src / tests /
-  - Postman tests at: src / package.json
-- Dockerfile at the root of the project.
+- Can't use GitHub Actions
 
 
 # Pipeline Structure Summary
