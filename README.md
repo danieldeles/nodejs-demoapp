@@ -1,29 +1,29 @@
 # Pipeline KK
 
-O documentação oficial esta dentro da pasta Docs: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
+The official documentation is inside the Docs folder: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
 
 
-## Objetivo:
+## Objective:
 
-Este documento descreve como desenvolver uma pipeline para o processo de CI (Continuous Integration) utilizando o projecto do GitHub.
+This document describes how to develop a pipeline for the CI (Continuous Integration) process using the GitHub project.
 
-Foi realizado um fork deste projecto : https://github.com/benc-uk/nodejs-demoapp
+This project was forked: https://github.com/benc-uk/nodejs-demoapp
 
-Pré-requisitos da Pipeline:
-- Ter um passo de análise de código usando SonarQube
-- Ter um passo de validação de testes unitários
-- Possuir testes em paralelo
-- Gerar imagem em Docker
-- Fazer push da imagem versionada para um repositório público
-- Não utilizar as GitHub Actions
+Pipeline prerequisites:
+- Have a code analysis step using SonarQube
+- Have a unit testing validation step
+- Have tests in parallel
+- Generate image in Docker
+- Push the versioned image to a public repository
+- Do not use GitHub Actions
 
-Além disso, algumas características merecem destaque pois influenciam nas decisões e nas ferramentas:
+In addition, some characteristics deserve to be highlighted because they influence decisions and tools:
 
-- Código fonte em Node.js - foi utilizado o framework Express com templates EJS.
-- Possui alguns testes prontos:
- - - Testes Mocha em: src/tests/
- - - Testes Postman em: src/package.json 
-- Possui Dockerfile na raiz do projecto.
+- Source code in Node.js - the Express framework with EJS templates was used.
+- It has some ready tests:
+  - Mocha tests at: src / tests /
+  - Postman tests at: src / package.json
+- Dockerfile at the root of the project.
 
 
 
