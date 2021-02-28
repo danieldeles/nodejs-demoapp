@@ -1,9 +1,9 @@
 # Pipeline KK
-
+---
 The **Official Documentation** (in Portuguese) is: https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
 
 There are also two **videos** inside the **Docs** folder. They show the pipeline working on Jenkins Labs.
-
+----
 ## Objective:
 
 This document describes **how to develop a pipeline for the CI** (Continuous Integration) process using the GitHub project.
