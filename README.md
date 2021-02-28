@@ -1,8 +1,8 @@
 # Pipeline KK
 
-The official documentation (in Portuguese) is inside the Docs folder: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
+The **official documentation** (in Portuguese) is inside the **Docs** folder: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
 
-There are also two videos of the pipeline working on Jenkins Labs.
+There are also two **videos** of the pipeline working on Jenkins Labs.
 
 ## Objective:
 
@@ -29,7 +29,7 @@ In addition, some characteristics deserve to be highlighted because they influen
 - Dockerfile at the root of the project.
 
 
-## Pipeline Structure Summary
+# Pipeline Structure Summary
 
 Based on the pre-defined conditions, a pipeline workflow was created:
 
