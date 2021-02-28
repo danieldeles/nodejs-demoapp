@@ -1,11 +1,6 @@
 
 pipeline {
 
-  //environment {
-    //imagename = "danieldeles/node01"
-    //registryCredential = 'userpassdockerhub'
-  //}
-
 
   agent any
     
