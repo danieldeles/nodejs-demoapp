@@ -6,7 +6,7 @@ There are also two **videos** inside the **Docs** folder. They show the pipeline
 
 ## Objective:
 
-This project describes **How to develop a pipeline for the CI** (Continuous Integration) process using:
+This project describes **How to develop a pipeline for the CI** (Continuous Integration) process using Jenkinsfile file and the tools:
 - GitHub 
 - Jenkins
 - SonarQube
