@@ -6,7 +6,7 @@ There are also two **videos** inside the **Docs** folder. They show the pipeline
 
 ## Objective:
 
-This project describes **how to develop a pipeline for the CI** (Continuous Integration) process using:
+This project describes **How to develop a pipeline for the CI** (Continuous Integration) process using:
 - GitHub 
 - Jenkins
 - SonarQube
@@ -16,7 +16,7 @@ This project describes **how to develop a pipeline for the CI** (Continuous Inte
 
 This project was forked: https://github.com/benc-uk/nodejs-demoapp
 
-Pipeline prerequisites:
+### Pipeline prerequisites:
 
 - Code analysis using SonarQube
 - Unit tests
