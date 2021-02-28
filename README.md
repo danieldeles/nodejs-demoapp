@@ -1,7 +1,7 @@
 # Pipeline KK
 
 The official documentation is inside the Docs folder: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
-
+There are also two videos of the pipeline working on Jenkins Labs.
 
 ## Objective:
 
@@ -27,7 +27,17 @@ In addition, some characteristics deserve to be highlighted because they influen
 
 
 
+## Pipeline Structure Summary
 
+Based on the pre-defined conditions, a pipeline workflow was created:
+1- Project checkout on GitHub
+2- Install as NodeJS dependencies
+3- Run tests in parallel:
+3.1- Code analysis in SonarQube
+3.2- Mocha Tests
+3.3- Postman tests
+4- Generate image in Docker using Dockerfile
+5- Push the versioned image to DockerHub
 
 
 
