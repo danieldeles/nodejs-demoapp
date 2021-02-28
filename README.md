@@ -1,6 +1,7 @@
 # Pipeline KK
 
 The official documentation is inside the Docs folder: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
+
 There are also two videos of the pipeline working on Jenkins Labs.
 
 ## Objective:
@@ -10,12 +11,14 @@ This document describes how to develop a pipeline for the CI (Continuous Integra
 This project was forked: https://github.com/benc-uk/nodejs-demoapp
 
 Pipeline prerequisites:
+
 - Have a code analysis step using SonarQube
 - Have a unit testing validation step
 - Have tests in parallel
 - Generate image in Docker
 - Push the versioned image to a public repository
 - Do not use GitHub Actions
+
 
 In addition, some characteristics deserve to be highlighted because they influence decisions and tools:
 
@@ -26,10 +29,10 @@ In addition, some characteristics deserve to be highlighted because they influen
 - Dockerfile at the root of the project.
 
 
-
 ## Pipeline Structure Summary
 
 Based on the pre-defined conditions, a pipeline workflow was created:
+
 1- Project checkout on GitHub
 2- Install as NodeJS dependencies
 3- Run tests in parallel:
