@@ -1,8 +1,8 @@
 # Pipeline KK
 
-The **official documentation** (in Portuguese) is inside the **Docs** folder: https://github.com/danieldeles/nodejs-demoapp/tree/master/Docs
+The **Official Documentation** (in Portuguese) is: https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
 
-There are also two **videos** of the pipeline working on Jenkins Labs.
+There are also two **videos** inside the **Docs** folder. They show the pipeline working on Jenkins Labs.
 
 ## Objective:
 
