@@ -1,4 +1,33 @@
-# Node.js - Demo Web Application
+# Pipeline KK
+
+Objetivo:
+
+Este documento descreve como desenvolver uma pipeline para o processo de CI (Continuous Integration) utilizando o projecto do GitHub.
+
+Foi realizado um fork deste projecto : https://github.com/benc-uk/nodejs-demoapp
+
+Pré-requisitos da Pipeline:
+Ter um passo de análise de código usando SonarQube
+Ter um passo de validação de testes unitários
+Possuir testes em paralelo
+Gerar imagem em Docker
+Fazer push da imagem versionada para um repositório público
+Não utilizar as GitHub Actions
+
+Além disso, algumas características merecem destaque pois influenciam nas decisões e nas ferramentas:
+
+Código fonte em Node.js - foi utilizado o framework Express com templates EJS.
+Possui alguns testes prontos:
+ Testes Mocha em: src/tests/
+ Testes Postman em: src/package.json 
+Possui Dockerfile na raiz do projecto.
+
+
+
+
+
+
+
 This is a simple Node.js web app using the Express framework and EJS templates. 
 
 The app has been designed with cloud native demos & containers in mind, in order to provide a real working application for deployment, something more than "hello-world" but with the minimum of pre-reqs. It is not intended as a complete example of a fully functioning architecture or complex software design.
