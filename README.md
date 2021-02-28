@@ -25,12 +25,11 @@ Pipeline prerequisites:
 Based on the pre-defined conditions, a pipeline workflow was created:
 
 - Project checkout on GitHub
-- Install as NodeJS dependencies
+- Install NodeJS dependencies
 - Run tests in parallel:
   - Code analysis in SonarQube
   - Mocha Tests
   - Postman tests
-- Generate image in Docker using Dockerfile
+- Deploy image in Docker using Dockerfile
 - Push the versioned image to DockerHub
 
---
