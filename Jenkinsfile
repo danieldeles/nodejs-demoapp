@@ -41,7 +41,7 @@ pipeline {
         stage('Tests Quality Check SonarQube') {
           steps {
            sh "/home/ddd/developer/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner \
-                -Dsonar.projectKey=nodejs-demoapp \
+                -Dsonar.projectKey=delesderrier_nodejs-kk \
                 -Dsonar.sources=src \
                 -Dsonar.host.url=http://10.0.0.100:9000 \
                 -Dsonar.login=8a4b975a864dbb3d6d3ea663a8d479b7f21b4cc6"
