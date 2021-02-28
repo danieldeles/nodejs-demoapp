@@ -6,7 +6,13 @@ There are also two **videos** inside the **Docs** folder. They show the pipeline
 
 ## Objective:
 
-This project describes **how to develop a pipeline for the CI** (Continuous Integration) process using the GitHub project.
+This project describes **how to develop a pipeline for the CI** (Continuous Integration) process using:
+- GitHub 
+- Jenkins
+- SonarQube
+- Mocha
+- Docker
+- DockerHub
 
 This project was forked: https://github.com/benc-uk/nodejs-demoapp
 
