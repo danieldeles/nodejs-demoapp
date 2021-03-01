@@ -38,6 +38,6 @@ Based on the pre-defined conditions, a pipeline workflow was created:
   - Postman tests
 - Deploy Docker image using Dockerfile
 - Push new image to DockerHub 
- - Image: delesderrier/nodejs-kk
- - Repository: https://hub.docker.com/repository/docker/delesderrier/nodejs-kk)
+  - Image: delesderrier/nodejs-kk
+  - Repository: https://hub.docker.com/repository/docker/delesderrier/nodejs-kk)
 
