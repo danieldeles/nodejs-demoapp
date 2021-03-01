@@ -31,7 +31,7 @@ This project was forked: https://github.com/benc-uk/nodejs-demoapp
 Based on the pre-defined conditions, a pipeline workflow was created:
 
 - Checkout the Project on GitHub
-  - https://github.com/danieldeles/nodejs-demoapp.git
+  - https://github.com/danieldeles/nodejs-demoapp
 - Install NodeJS dependencies
 - Run tests in parallel:
   - Code analysis in SonarQube
