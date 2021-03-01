@@ -1,4 +1,7 @@
 /*
+This project describes How to develop a pipeline for the CI (Continuous Integration) process 
+using Jenkinsfile.
+
 The Official Documentation (Portuguese) is in: 
 https://github.com/danieldeles/nodejs-demoapp/blob/master/Docs/Doc_KK_Pipeline.pdf
 */
