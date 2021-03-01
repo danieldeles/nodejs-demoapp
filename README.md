@@ -37,5 +37,5 @@ Based on the pre-defined conditions, a pipeline workflow was created:
   - Mocha Tests
   - Postman tests
 - Deploy Docker image using Dockerfile
-- Push new image to DockerHub
+- Push new image to DockerHub (https://hub.docker.com/repository/docker/delesderrier/nodejs-kk)
 
